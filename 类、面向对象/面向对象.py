@@ -2,7 +2,7 @@
 # 面向对象(一)  实例变量与类变量
 
 class Role(object):
-    n = "这里是类变量"
+    n = "这里是类变量，类变量是大家的，都能用"
 
     def __init__(self, name, role, gun, life_value=100):
         self.name = name
