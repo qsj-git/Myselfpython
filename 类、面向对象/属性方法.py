@@ -16,4 +16,3 @@ class Dog(object):
 d = Dog("wer")
 d.eat
 d.eat = "apple"
-# d.eat
