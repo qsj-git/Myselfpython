@@ -38,7 +38,7 @@ print(role1.n)
 print(role2.n)
 
 
-''' # 面向对象(二) 类的继承
+ # 面向对象(二) 类的继承
 
 #class People():     # 经典类写法
 class People(object): #新式类写法
@@ -84,17 +84,17 @@ class Women(People, Relation):   #多继承，继承了People和Relation两个�
 
 man1 = Man("man","20")
 
-# man1.sleep()
-# man1.number()
-# man1.somking()
+man1.sleep()
+man1.number()
+man1.somking()
 
 women1 = Women("woman", "23", "yellow")
-# women1.shopping()
-# women1.haircolor()
+women1.shopping()
+women1.haircolor()
 
 women1.make_friends(man1)
 
 print(women1.firends[0].name)
 man1.name = "man2"
 print(women1.firends[0].name)
-'''
+
