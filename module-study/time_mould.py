@@ -1,4 +1,6 @@
 import time
+import datetime
+
 
 '''
 Python 提供了一个 time 和 calendar 模块可以用于格式化日期和时间。
@@ -71,3 +73,8 @@ time.sleep(secs)
 '''
 time.sleep(10)  #延时10秒
 print("END")
+
+
+''' datetime 可以显示毫秒'''
+print(datetime.datetime.now())
+print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f'))
