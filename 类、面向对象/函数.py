@@ -10,15 +10,21 @@ def test1():
 
 test1()
 
+
 ############  函数二 传值方式 #################
 
-# def test(*args): #把N个位置参数，以元组的类型打印
-#     print(args)
-# test(1,2,3,4,5,6)
-#
-# def test2(**kwargs): #把N个关键字参数，以字典的类型打印
-#     print(kwargs)
-# test2(name='qsj',age='25',sex='man')
+
+def test(*args):  # 把N个位置参数，以元组的类型打印
+    print(args)
+
+test(1,2,3,4,5,6)
+
+
+def test2(**kwargs): # 把N个关键字参数，以字典的类型打印
+    print(kwargs)
+
+test2(name='qsj',age='25',sex='man')
+
 
 ###########  函数三 函数递归 ###############
 
@@ -30,3 +36,17 @@ def number(n):
 
 number(10)
 
+
+############  闭包  ###############
+
+def package():
+    a = [0]
+    def closure():
+        a[0] += 1
+        return a
+    return closure
+
+
+fun1 = package()
+print(fun1())
+print(fun1())
